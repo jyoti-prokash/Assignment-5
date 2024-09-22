@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog</title>
+</head>
+<body>
+    <nav class="sticky top-0 backdrop-blur-lg">
+        <div class="bg-[#F9F7F3] py-12">
+          <div class="container mx-auto flex justify-between items-center">
+              <div class="">
+                  <a class="px-8 btn font-bold bg-[#B4F461] lg:text-lg">Home</a>
+                </div>
+              <div class="font-bold lg:text-lg">
+                  <a class="flex items-center"> <img class="mr-3" src="./assets/logo.png" alt="">Donate Bangladesh</a>
+              </div>
+              <div class="">
+                  <a class="flex gap-2 text-[#111111B3] font-bold lg:text-lg"><img src="./assets/coin.png" alt=""><span>5500</span>BDT</a>
+                </div>
+            </div>
+        </div>
+      <!-- Navbar Section end -->
+      <section>
+        <h1 class="container mx-auto text-4xl font-extrabold my-10">Important FAQ</h1>
+      </section>
+      <section class="container mx-auto space-y-5 border p-3">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM (Document Object Model) is a hierarchical tree structure representing a webpage’s HTML elements. It allows JavaScript to access, modify, and interact with these elements dynamically. Developers use the DOM to change content, styles, and structure, enabling interactive and responsive web pages based on user interactions.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">what do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM, use methods like getElementById() for an element by ID, getElementsByClassName() for elements by class, or querySelector() to select the first matching element with a CSS selector. These allow JavaScript to access and manipulate DOM elements dynamically.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it usefull?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique where a single event listener is attached to a parent element instead of multiple child elements. When an event occurs on a child, it "bubbles up" to the parent, which handles it. This is useful for improving performance by reducing the number of event listeners, simplifying code, and allowing dynamic elements to be managed without needing to reattach listeners for new child elements added later.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the purpose of the preventDefault() method in event handling?</div>
+            <div class="collapse-content">
+              <p>The preventDefault() method is used in event handling to prevent the default action that belongs to the event. For example, when a form is submitted, the default action is to reload the page. By calling event.preventDefault(), you can stop this behavior, allowing you to handle the event in a custom way, such as validating form input before submission. This is crucial for creating interactive web applications that require custom handling of user interactions.</p>
+            </div>
+          </div>
+      </section>
+  </nav>
+</body>
+</html>
