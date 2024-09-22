@@ -8,30 +8,32 @@
     <title>Document</title>
 </head>
 <body class="p-5">
-        <main class="container mx-auto bg-[#F9F7F3]">
-            <!-- Navbar Section start -->
-            <section>
-                <div class="navbar mt-8">
-                    <div class="navbar-start">
-                      <a class="px-8 btn font-bold bg-[#B4F461] lg:text-lg">Blog</a>
+    <!-- Navbar Section start -->
+        <nav class="sticky top-0 backdrop-blur-lg">
+              <div class="bg-[#F9F7F3] py-12">
+                <div class="container mx-auto flex justify-between items-center">
+                    <div class="">
+                        <a class="px-8 btn font-bold bg-[#B4F461] lg:text-lg">Blog</a>
+                      </div>
+                    <div class="font-bold lg:text-lg">
+                        <a class="flex items-center"> <img class="mr-3" src="./assets/logo.png" alt="">Donate Bangladesh</a>
                     </div>
-                    <div class="navbar-center lg:flex">
-                      <ul class="menu menu-horizontal px-1">
-                        <li class="font-bold lg:text-lg"><a> <img class="mr-3" src="./assets/logo.png" alt="">Donate Bangladesh</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end">
-                      <a class="flex gap-2 text-[#111111B3] font-bold lg:text-lg"><img src="./assets/coin.png" alt=""><span>5500</span>BDT</a>
-                    </div>
+                    <div class="">
+                        <a class="flex gap-2 text-[#111111B3] font-bold lg:text-lg"><img src="./assets/coin.png" alt=""><span>5500</span>BDT</a>
+                      </div>
                   </div>
-            </section>
+              </div>
             <!-- Navbar Section end -->
-            <!-- main section start -->
-            <section class="bg-white py-10 space-y-8">
+            <section>
                 <div class="my-10 inline-flex items-center justify-center w-full gap-5">
                     <button class="btn font-bold text-xl bg-[#B4F461] px-10">Donation</button>
                     <button class="btn font-bold text-xl px-10">History</button>
                 </div>
+            </section>
+        </nav>
+        <main class="container mx-auto">
+            <!-- main section start -->
+            <section class="bg-white py-10 space-y-8">          
     <!-- donation Noakhali section Start-->
                 <div class="lg:flex justify-between gap-12 border p-10 rounded-xl">
                     <div class="lg:w-4/6 mb-8"><img class="w-full" src="./assets/noakhali.png" alt=""></div>
