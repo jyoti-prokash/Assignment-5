@@ -15,9 +15,13 @@
     <!-- Navbar Section start -->
     <nav class="sticky top-0 backdrop-blur-lg">
       <div class="bg-[#F9F7F3] py-12">
-        <div class="container mx-auto flex md:justify-between flex-col md:flex-row gap-3 items-center">
+        <div
+          class="container mx-auto flex md:justify-between flex-col md:flex-row gap-3 items-center"
+        >
           <div>
-            <a id="blog" class="px-8 btn font-bold bg-[#B4F461] lg:text-lg">Blog</a>
+            <a id="blog" class="px-8 btn font-bold bg-[#B4F461] lg:text-lg"
+              >Blog</a
+            >
           </div>
           <div class="font-bold lg:text-lg">
             <a class="flex items-center">
@@ -27,7 +31,9 @@
           </div>
           <div class="">
             <a class="flex gap-2 text-[#111111B3] font-bold lg:text-lg"
-              ><img src="./assets/coin.png" alt="" /><span id="total-money">8000</span>BDT</a
+              ><img src="./assets/coin.png" alt="" /><span id="total-Amount"
+                >20000</span
+              >BDT</a
             >
           </div>
         </div>
@@ -35,10 +41,15 @@
       <!-- Navbar Section end -->
       <section>
         <div class="my-10 inline-flex items-center justify-center w-full gap-5">
-          <button id="donation-btn" class="btn font-bold text-xl bg-[#B4F461] px-10">
+          <button
+            id="donation-btn"
+            class="btn font-bold text-xl bg-[#B4F461] px-10"
+          >
             Donation
           </button>
-          <button id="history-btn" class="btn font-bold text-xl px-10">History</button>
+          <button id="history-btn" class="btn font-bold text-xl px-10">
+            History
+          </button>
         </div>
       </section>
     </nav>
@@ -52,7 +63,8 @@
           </div>
           <div class="space-y-8 lg:w-5/6">
             <button class="btn text-lg">
-              <img src="./assets/coin.png" alt="" /> <span id="donate-money-noakhali">1000</span>BTD
+              <img src="./assets/coin.png" alt="" />
+              <span id="donate-amount-noakhali">1000</span>BTD
             </button>
             <h2 class="text-2xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -66,10 +78,12 @@
               lives of those in need.
             </p>
             <div class="border rounded-lg text-lg">
-              <input id="donate-input"
+              <input
+                id="donate-input"
                 class="w-full p-3"
                 type="text"
                 placeholder="Write Donation Amount"
+                min="1"
               />
             </div>
             <div>
@@ -159,10 +173,35 @@
       <!-- main card section end -->
       <!-- history section -->
       <section id="donation-history" class="hidden">
-              <h1 class="text-3xl font-bold text-blue-600 text-center">Donation History</h1>
+        <h1 class="my-5 text-3xl font-bold text-blue-400 text-center">
+          Acount History
+        </h1>
+        <div
+          id="donation-container"
+          class="p-5 rounded-xl text-xl space-y-3"
+        ></div>
       </section>
+      <!-- modal -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <div class="text-center">
+            <h3 class="text-3xl font-bold">Congrats!</h3>
+            <h2 class="ml-48 mt-5">
+              <img class="w-14" src="./assets/coin.png" alt="" />
+            </h2>
+            <p class="text-lg py-4">You Have Donated for Humankind</p>
+            <p class="text-2xl font-bold py-4">Successfully</p>
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
-    <script src="./JS/index.js"></script>
+    <script src="./JS/home.js"></script>
     <script src="./JS/function.js"></script>
   </body>
 </html>
