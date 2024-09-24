@@ -38,6 +38,7 @@
     document.getElementById('donate-amount-noakhali').innerText=donationAmountNoakhali+donateAmount;
     document.getElementById('total-Amount').innerText=totalAmount-donateAmount;
     document.getElementById("my_modal_1").showModal();
+    document.getElementById('donate-input').value = (' ');
     // history container
     const date = new Date();
     const p = document.createElement('p');
@@ -62,6 +63,7 @@ document.getElementById('donate-now-feni').addEventListener("click", function(){
     document.getElementById('feni-donate-amount').innerText = donateFeniValue + feniDonateAmount;
     document.getElementById('total-Amount').innerText= totalAmount - donateFeniValue;
     document.getElementById("my_modal_1").showModal();
+    document.getElementById('donate-feni-input').value = (' ');
     // history container
     const date = new Date();
     const p = document.createElement('p');
@@ -87,6 +89,7 @@ document.getElementById('donate-quota-btn').addEventListener("click", function()
     const quotaDonateAmount = parseFloat(document.getElementById('quota-donate-amount').innerText);
     document.getElementById('quota-donate-amount').innerText = quotaDonateAmount + donateQuotaValue;
     document.getElementById("my_modal_1").showModal();
+    document.getElementById('quota-donate-value').value = (' ');
     // history container
     const date = new Date();
     const p = document.createElement('p');
