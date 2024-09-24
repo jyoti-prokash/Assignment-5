@@ -9,3 +9,4 @@ function donateInput(id) {
   const donateValue = parseFloat(document.getElementById(id).value);
   return donateValue;
 }
+
